@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.gretty' version '3.0.9' // provide an embedded servlet container : jetty and/or tomcat
+}
+
+group 'com.joao.springmvc'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.24'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+gretty {
+    httpPort = 8080
+    contextPath = '/'
+    //servletContainer = 'jetty9.4'
+    servletContainer = 'tomcat9'
+}
+
+test {
+    useJUnitPlatform()
+}
