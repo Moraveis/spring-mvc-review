@@ -4,7 +4,7 @@
 
         <p>Table of Content</p>
         <ol>
-          <li><a href="show-form" alt="Go to Form">Go to Form</a></li>
+          <li><a href="/hello/show-form" alt="Go to Form">Go to Form</a></li>
         </ol>
     </body>
 </html>
