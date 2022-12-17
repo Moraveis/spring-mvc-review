@@ -4,7 +4,7 @@
     </head>
 
     <body>
-        <form action="process-form-updated" method="GET">
+        <form action="process-form-v3" method="GET">
             <input type="text" name="studentName" placeholder="What's your name?" />
             <input type="submit" />
         </form>
