@@ -11,9 +11,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
 
-    implementation 'javax.servlet:jstl:1.2'
+    implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+    implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.2.0.Final'
     implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.24'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
