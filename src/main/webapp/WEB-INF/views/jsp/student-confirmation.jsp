@@ -6,6 +6,7 @@
     <title>Student Confirmation</title>
 </head>
 <body>
-    <p> The Student is confirmed: ${student.firstName} ${student.lastName}
+    <p> The Student is confirmed: ${student.firstName} ${student.lastName} </p>
+    <p>Country: ${student.country}</p>
 </body>
 </html>
